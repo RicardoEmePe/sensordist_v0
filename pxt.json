@@ -1,5 +1,5 @@
 {
-    "name": "SensorDist_v0",
+    "name": "SensorDist_v1",
     "description": "",
     "dependencies": {
         "core": "*",
