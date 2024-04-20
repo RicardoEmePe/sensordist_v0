@@ -1,4 +1,7 @@
 let distancia = 0
+basic.showString("BERTA")
+music.play(music.builtinPlayableSoundEffect(soundExpression.hello), music.PlaybackMode.UntilDone)
+basic.pause(200)
 basic.forever(function () {
     distancia = sonar.ping(
     DigitalPin.P1,
@@ -14,4 +17,5 @@ basic.forever(function () {
             music.ringTone(988)
         }
     }
+    music.stopAllSounds()
 })
