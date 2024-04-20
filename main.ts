@@ -9,6 +9,7 @@ basic.forever(function () {
     PingUnit.Centimeters
     )
     basic.showNumber(distancia)
+    music.stopAllSounds()
     basic.pause(100)
     if (distancia < 10 && distancia > 5) {
         music.ringTone(494)
@@ -17,5 +18,4 @@ basic.forever(function () {
             music.ringTone(988)
         }
     }
-    music.stopAllSounds()
 })
