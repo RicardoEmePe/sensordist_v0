@@ -7,7 +7,11 @@ basic.forever(function () {
     )
     basic.showNumber(distancia)
     basic.pause(100)
-    if (distancia < 20) {
-        basic.showIcon(IconNames.Heart)
+    if (distancia < 10 && distancia > 5) {
+        music.ringTone(494)
+    } else {
+        if (distancia < 5 && distancia > 1) {
+            music.ringTone(988)
+        }
     }
 })
